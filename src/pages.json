@@ -1,0 +1,100 @@
+{
+	"pages": [{
+			"path": "pages/index/index",
+			"style": {
+				"navigationBarTitleText": "首页"
+			}
+		},
+		{
+			"path": "pages/delivery/delivery-note",
+			"style": {
+				"navigationBarTitleText": "极简发货单"
+			}
+		},
+		{
+			"path": "pages/preview/preview",
+			"style": {
+				"navigationBarTitleText": "签名确认与分享"
+			}
+		},
+
+		{
+			"path": "pages/login/login", // 检查这里！必须长这样，前面没有斜杠
+			"style": {
+				"navigationBarTitleText": "登录"
+			}
+		},
+		{
+			"path": "pages/login/agreement", // 如果你的文件建在这里，就写这个
+			"style": {
+				"navigationBarTitleText": "服务协议"
+			}
+		},
+		{
+			"path": "pages/login/private", // 如果你的文件建在这里，就写这个
+			"style": {
+				"navigationBarTitleText": "隐私政策"
+			}
+		},
+
+		{
+			"path": "pages/login/register", // 如果你的文件建在这里，就写这个
+			"style": {
+				"navigationBarTitleText": "注册页面"
+			}
+		},
+		{
+			"path": "pages/login/forgot", // 如果你的文件建在这里，就写这个
+			"style": {
+				"navigationBarTitleText": "忘记密码"
+			}
+		}
+
+	],
+
+
+	"tabBar": {
+		"color": "#909399", // 未选中时，文字的颜色
+		"selectedColor": "#2B80FF", // 选中时，文字的颜色（主题色）
+		"backgroundColor": "#ffffff", // 导航栏背景颜色
+		"borderStyle": "black", // 导航栏顶部边框颜色，仅支持 black 或 white
+		"list": [{
+				"pagePath": "pages/index/index", // 页面路径（最前面绝对不能有 /）
+				"text": "首页", // 按钮文字
+				"iconPath": "static/tabbar/home.png", // 未选中的图标路径
+				"selectedIconPath": "static/tabbar/home.svg" // 选中的图标路径
+			},
+			{
+				"pagePath": "pages/user/user",
+				"text": "工具",
+				"iconPath": "static/tabbar/user.png",
+				"selectedIconPath": "static/tabbar/user.svg"
+			},
+			{
+				"pagePath": "pages/user/user",
+				"text": "我的",
+				"iconPath": "static/tabbar/user.png",
+				"selectedIconPath": "static/tabbar/user-active.png"
+			},
+			// {
+			//   "pagePath": "pages/user/user",
+			//   "text": "我的",
+			//   "iconPath": "static/tabbar/user.png",
+			//   "selectedIconPath": "static/tabbar/user-active.png"
+			// },
+			// {
+			//   "pagePath": "pages/user/user",
+			//   "text": "我的",
+			//   "iconPath": "static/tabbar/user.png",
+			//   "selectedIconPath": "static/tabbar/user-active.png"
+			// }
+
+		]
+	},
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "uni-app",
+		"navigationBarBackgroundColor": "#F8F8F8",
+		"backgroundColor": "#F8F8F8"
+	}
+}
